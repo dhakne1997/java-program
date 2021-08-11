@@ -10,8 +10,7 @@ public class Celis
 	  float Fahrenheit, Celsius ;  
    System.out.println("Enter temperature in Celsius: ");
    Celsius = sc.nextFloat();
-        // Celsius= 13;  
-        // System.out.println("\n fauri:"+  Fahrenheit);
+      
          
          Fahrenheit =((Celsius*9)/5)+32;  
          System.out.println("Temperature in Fahrenheit is: "+Fahrenheit);  
