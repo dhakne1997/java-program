@@ -1,3 +1,6 @@
+
+// 2021 dhakne balaji All Rights Reserved
+
 package day1;
 
 import java.util.Scanner;
