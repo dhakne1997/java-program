@@ -10,7 +10,7 @@ public class Interist
 	  Scanner sc = new Scanner(System.in);
 	  
 	  
-	  float p, r,  t,  si; // principal amount, rate, time and simple interest respectively  
+	  float p, r,  t,  si;   
 
 	  System.out.println("Enter the profit \t loss \t time : "); 
 	  
