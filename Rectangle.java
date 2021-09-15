@@ -1,32 +1,27 @@
-package practice;
+package Lab6.Lab6Q3;
 
-import java.util.Scanner;
 
-public class Rectangle
-{
-    	public static void main( String[] args ) 
-    	{
-		Scanner reader = new Scanner(System.in);
-	
-		int length, breadth, perimeter, area;
-		System.out.print("\nEnter length and breadth:\n");
-		length = reader.nextInt();
-		breadth = reader.nextInt();
-	
-		area = length*breadth;
-		perimeter = 2 * (length + breadth);
-	
-		System.out.print("Area is : " + area);
-		System.out.print("\nPerimeter is : " + perimeter);
-	
-		if (area>perimeter)
-			System.out.print("\nArea is greater than perimeter");
-		else if (perimeter<area)
-			System.out.print("Area is lesser than perimeter");
-		else
-			System.out.print("Area and perimeter are equal");
-		
-		reader.close();
-    	}
+public class Rectangle extends Shape {
+    private final double width, length; 
+
+    public Rectangle() {
+        this(1,1);
+    }
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
+    }
+
+    @Override
+    public double area() {
+      
+        return width * length;
+    }
+
+    @Override
+    public double perimeter() {
+      
+        return 2 * (width + length);
+    }
 
 }
